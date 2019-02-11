@@ -1,0 +1,33 @@
+{
+  "name": "sassgit",
+  "version": "1.0.0",
+  "description": "sass projects\r [Learning Git](https://www.tutorialspoint.com/git/index.htm) — GitHub Tutorials\r ==================================================",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rachanads/sass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rachanads/sass/issues"
+  },
+  "homepage": "https://github.com/rachanads/sass#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "css": "^2.2.4",
+    "dependencies": "0.0.1",
+    "grunt": "^1.0.3",
+    "grunt-contrib-uglify": "^4.0.0",
+    "jquery": "^3.3.1",
+    "ruby": "^0.6.1",
+    "sass": "^1.17.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-htmlmin": "^3.0.0",
+    "grunt-contrib-sass": "^1.0.0"
+  }
+}
