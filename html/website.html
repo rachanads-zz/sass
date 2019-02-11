@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website using Flex</title>
+        <link rel="stylesheet" href="website.css">
+    </head>
+<body>
+
+<!-- Note -->
+<div style="background:yellow;padding:5px">
+  <h4 style="text-align:center">Resize the browser window to see the responsive effect.</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>My Website</h1>
+  <p>With a <b>flexible</b> layout.</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#about">About</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#clients">Clients</a>
+  <a href="#footer">Contact Us</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side" id="about">
+    <h2>About Us</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg">
+        <img src="flexbox.png" alt="flexbox">
+    </div>
+    <p class="list">Before the Flexbox Layout module, there were four layout modes:
+        <ol>
+            <li>Block, for sections in a webpage</li>
+            <li>Inline, for text</li>
+            <li>Table, for two-dimensional table data</li>
+            <li>Positioned, for explicit position of an element</li>
+            <li>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</li>
+        </ol>
+    </p>
+    <h3>CSS Flexbox Properties</h3>
+    <table class="table">
+        <thead class="head">
+            <td>Property</td>
+            <td>Description</td>
+        </thead>
+        <tbody class="body">
+            <tr>
+                <td>display</td>
+                <td>Specifies the type of box used for an HTML element</td>
+            </tr>
+            <tr>
+                    <td>flex-direction</td>
+                    <td>Specifies the direction of the flexible items inside a flex container</td>
+            </tr>
+            <tr>
+                    <td>justify-content</td>
+                    <td>Vertically aligns the flex items when the items do not use all available space on the cross-axis</td>
+            </tr>
+            <tr>
+                    <td>align-items</td>
+                    <td>Specifies the type of box used for an HTML element</td>
+            </tr>
+            <tr>
+                    <td>flex-wrap</td>
+                    <td>Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line</td>
+            </tr>
+            <tr>
+                    <td>align-content</td>
+                    <td>Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines</td>
+            </tr>
+            <tr>
+                    <td>flex-flow</td>
+                    <td>A shorthand property for flex-direction and flex-wrap</td>
+            </tr>
+            <tr>
+                    <td>order</td>
+                    <td>Specifies the order of a flexible item relative to the rest of the flex items inside the same container</td>
+            </tr>
+            <tr>
+                    <td>align-self</td>
+                    <td>Used on flex items. Overrides the container's align-items property</td>
+            </tr>
+            <tr>
+                    <td>flex</td>
+                    <td>A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties</td>
+            </tr>
+        </tbody>
+    </table>
+<p></p>
+    <div class="rtable">
+        <div class="trow">
+            <div class="rdata"><b>Property</b></div>
+            <div class="rdata"><b>Description</b></div>
+        </div>
+                <div class="trow">
+                    <div class="rdata">display</div>
+                    <div class="rdata">Specifies the type of box used for an HTML element</div>
+                </div>
+                <div class="trow">
+                        <div class="rdata">flex-direction</div>
+                        <div class="rdata">Specifies the direction of the flexible items inside a flex container</div>
+                </div>
+                <div class="trow">
+                        <div class="rdata">justify-content</div>
+                        <div class="rdata">Vertically aligns the flex items when the items do not use all available space on the cross-axis</div>
+                </div>
+                <div class="trow">
+                        <div class="rdata">align-items</div>
+                        <div class="rdata">Specifies the type of box used for an HTML element Specifies the type of box used for an HTML element</div>
+                </div>
+                <div class="trow">
+                        <div class="rdata">flex-wrap</div>
+                        <div class="rdata">Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line</div>
+                </div>
+                <div class="trow">
+                        <div class="rdata">align-content</div>
+                        <div class="rdata">Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines</div>
+                </div>
+                <div class="trow">
+                        <div class="rdata">flex-flow</div>
+                        <div class="rdata">A shorthand property for flex-direction and flex-wrap</div>
+                </div>
+                <div class="trow">
+                        <div class="rdata">order</div>
+                        <div class="rdata">Specifies the order of a flexible item relative to the rest of the flex items inside the same container</div>
+                </div>
+                <div class="trow">
+                        <div class="rdata">align-self</div>
+                        <div class="rdata">Used on flex items. Overrides the container's align-items property</div>
+                </div>
+                <div class="trow">
+                        <div class="rdata">flex</div>
+                        <div class="rdata">A shorthand property for the flex-grow, flex-shrink, and the flex-basis properties</div>
+                </div>
+    </div>
+  </div>
+  <div class="main" id="Portfolio">
+    <h2>The align-self property</h2>
+    <div class="fakeimg">
+        <img src="align.PNG" alt="align"></div>
+    <p>The align-self property specifies the alignment for the selected item inside the flexible container.
+        The align-self property overrides the default alignment set by the container's align-items property.</p>
+    <br>
+    <h2>The flex-shrink Property</h2>
+    <div class="fakeimg">
+        <img src="shrink.PNG" alt="shrink">
+    </div>
+    <p>The flex-shrink property specifies how much a flex item will shrink relative to the rest of the flex items.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer" id="footer">
+  <h2>To study more about Flexbox follow the link below</h2>
+  <a href="https://www.w3schools.com/css/css3_flexbox.asp">Flexbox Tutorials</a>
+</div>
+
+</body>
+</html>

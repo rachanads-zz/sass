@@ -1,0 +1,99 @@
+@import "_variables";
+
+@mixin type() {
+    list-style-type: lower-alpha;
+  }
+@mixin contentFeature() {
+    p, ul, li{
+        @content;
+    }
+}
+@mixin responsive() {
+    .c1, .c2, .c3, #c{
+        @content;
+    }
+}
+@include contentFeature() {
+    background: lightgray;
+  }
+@include responsive(){
+    @media #{$tablet} {
+        height: 400px;
+        width: 600px;
+        flex-direction: row-reverse;
+        text-align: center;
+      }
+    @media #{$mobile} {
+        height: 400px;
+        width: 600px;
+        flex-direction: row-reverse;
+        text-align: center;
+    }
+}
+.main .r1 {
+    background-color: white;
+    display: flex;
+    margin-left: $outermargin;
+    margin-right: $outermargin;
+    flex-direction: row;
+    text-align: center;
+    @media #{$tablet} {
+        display: block;
+        height: 1000px;
+        flex-direction: row-reverse; 
+      }
+    @media #{$mobile} {
+        display: block;
+        height: 1000px;
+        flex-direction: row-reverse; 
+    }
+    .c1, .c2, .c3, #c{
+        background-color: $bcolor;
+        border-width: $borderwidth;
+        border-color: $bordercolor;
+        border-style: $borderstyle;
+        text-align: center;
+        flex: 1;
+               
+        h3{
+            color: $h3color;
+            text-align: center;
+            font: {
+                family: cursive;
+                size: $size;
+                weight: bold;
+              }
+        }
+        p, ul, li{
+            color: $pcolor;
+            text-align: justify;
+            margin-left: $outermargin;
+            margin-right: $outermargin;
+            font: {
+                family: sans-serif;
+                size: $size - 15px;
+              }
+            @media #{$tablet} {
+                color: yellow;
+              }
+            @media #{$mobile} {
+                color: yellow;
+            }   
+            @include type();
+        }
+        a{
+            color:blue;
+            margin-left: $outermargin;
+            margin-right: $outermargin;
+            font: {
+                family: cursive;
+                size: $size - 10px;
+                weight: bold;
+              }
+              &:hover { color: lightblue; }
+        }
+    }
+}
+.image{
+    text-align:center;
+}
