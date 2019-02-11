@@ -46,11 +46,9 @@ body {
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
-  font-size: 2vh;
 }
 .side .list {
   font-family: cursive;
-  font-size: 2vw;
 }
 .side .list ol, .side .list li {
   background-color: aqua;
@@ -105,14 +103,12 @@ body {
 .table .head {
   font-family: cursive;
   font-weight: bold;
-  font-size: 2em;
   background-color: #726a6a;
   text-align: center;
 }
 .table .body {
   background-color: #dbb9b9;
   text-align: center;
-  font-size: 1.5em;
 }
 
 .rtable {
@@ -129,12 +125,29 @@ body {
   display: table-cell;
   border: 1px solid black;
   text-align: center;
-  font-size: 2rem;
 }
 
 .header {
   background-color: yellow;
   padding: 5px;
+}
+
+.fontsize, .textbox {
+  background-color: antiquewhite;
+  border: 2px solid springgreen;
+  font-size: 20px;
+}
+.fontsize .vh, .textbox .vh {
+  font-size: 2vh;
+}
+.fontsize .vw, .textbox .vw {
+  font-size: 3vw;
+}
+.fontsize .em, .textbox .em {
+  font-size: 2em;
+}
+.fontsize .rem, .textbox .rem {
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=website.css.map */
